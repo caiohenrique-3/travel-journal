@@ -1,0 +1,114 @@
+section {
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+#places article {
+  display: inline;
+  text-align: center;
+}
+
+#places .img-container {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+#places .img-container img {
+  inline-size: 100%;
+  border-radius: 0.8rem;
+}
+
+#places #location {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+}
+
+#location i {
+  font-size: 1.2rem;
+  padding-inline-end: 0.3rem;
+  color: var(--complementary-color);
+}
+
+#location p {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 0 0.4rem 0 0;
+}
+
+#location a:hover,
+#location a:focus {
+  font-weight: 700;
+}
+
+#location a:focus {
+  outline: solid 0.2rem var(--text-color);
+  outline-offset: 0.3rem;
+}
+
+#place {
+  padding-block-start: 0.5rem;
+}
+
+#date h3 {
+  font-size: 0.9rem;
+}
+
+#description {
+  max-inline-size: 66ch;
+  line-height: 1.5;
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+  text-align: left;
+}
+
+@media (min-width: 600px) {
+  #places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1300px) {
+  .card-container {
+    display: flex;
+    margin-block-end: 2.5rem;
+  }
+
+  .img-container {
+    flex-shrink: 0;
+    flex: 1;
+    margin-inline-end: 2rem;
+  }
+
+  .info-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #location,
+  #place,
+  #date,
+  #description {
+    text-align: left;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+  }
+
+  #location {
+    align-self: flex-start;
+  }
+
+  #place {
+    padding: 0.2rem 0 0.2rem 0.4rem;
+  }
+
+  #date {
+    padding: 0.2rem 0 0.2rem 0.4rem;
+  }
+
+  #description {
+    padding: 0.2rem 0 0.2rem 0.4rem;
+  }
+}

@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --complementary-color: darkblue;
+  --bg-color: white;
+  --text-color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --complementary-color: #f7b538;
+    --bg-color: black;
+    --text-color: white;
+  }
+
+  html {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+
+  a {
+    color: var(--complementary-color);
+  }
+}

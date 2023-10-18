@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: var(--complementary-color);
+  color: var(--bg-color);
+}
+
+header i {
+  font-size: 1.5rem !important;
+}
+
+header p {
+  padding-inline-start: 0.5rem;
+}
